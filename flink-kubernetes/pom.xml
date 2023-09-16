@@ -32,6 +32,7 @@ under the License.
 
 	<properties>
 		<kubernetes.client.version>6.6.2</kubernetes.client.version>
+<!--		<kubernetes.client.version>5.12.2</kubernetes.client.version>-->
 		<surefire.module.config><!--
 			CommonTestUtils#setEnv
 			-->--add-opens=java.base/java.util=ALL-UNNAMED
@@ -91,6 +92,13 @@ under the License.
 			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>io.fabric8</groupId>
+			<artifactId>kubernetes-model-core</artifactId>
+			<version>5.12.2</version>
+		</dependency>
+
 
 	</dependencies>
 
